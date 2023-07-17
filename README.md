@@ -21,27 +21,30 @@ Utlized ML to discover trends and regression for a medical cause.
 - Technology 1
 - Technology 2
 
-[Back To The Top](#ML-Cancer-Detection)
-
 ---
 
 ## How To Use
 
 #### Installation
-
-
+pip3 install numpy
+pip3 install pandas
+pip3 install matplotlib
+pip3 install seaborn
 
 #### API Reference
 
 ```html
     <p>dummy code</p>
 ```
-[Back To The Top](#read-me-template)
 
 ---
 
-## References
-[Back To The Top](#read-me-template)
+### Backlog 
+| Id  | Feature  | Status  |  Date  |
+|:-:  |---       | :-:     | :-:     |
+| F01 | Proccessing Missing Values |  P | July-17-2023  |
+| F02 |  |  P |    |
+| F03 |  |  P |    |
 
 
 ---
