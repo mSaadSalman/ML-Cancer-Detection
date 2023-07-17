@@ -42,8 +42,8 @@ pip3 install seaborn
 ### Backlog 
 | Id  | Feature  | Status  |  Date  |
 |:-:  |---       | :-:     | :-:     |
-| F01 | Proccessing Missing Values |  P | July-17-2023  |
-| F02 |  |  P |    |
+| F01 | Proccessing Missing Values |  D | July-17-2023  |
+| F02 | Count Plot |  D |  July-17-2023  |
 | F03 |  |  P |    |
 
 
