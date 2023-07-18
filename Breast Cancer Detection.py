@@ -39,6 +39,20 @@ print(dataset.head())
 print("-------------Count Plot-------------")
 sns.countplot(x=dataset['diagnosis_M'], label='Count')
 plt.xticks([0, 1], ['0', '1'])
+#plt.show()
+
+print("-------Correlation matrix and heatmap-------")
+dataset_2 = dataset.drop(columns='diagnosis_M')
+print(dataset_2.head())
+
+print(dataset_2.corrwith(dataset['diagnosis_M']).plot.bar(figsize=(20,10,),title = 'Correlated with diagnosis_M', rot=45, grid=True))
+#plt.show()
+
+corr = dataset.corr() #represents the direct correlation value of each indepenent variable to itself
+print(corr)
+
+plt.figure(figsize=(20,10))
+sns.heatmap(corr,annot=True)
 plt.show()
 
-#print((dataset.diagnosis_M == 0).sum())
+print("-------Splitting Data into train and test sets -------")

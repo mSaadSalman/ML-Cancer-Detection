@@ -16,6 +16,8 @@
 Devolped a Machine Learning model to detect breast cancer from Wisconsin Diagnotics data set. 
 Utlized ML to discover trends and regression for a medical cause.
 
+-Utlized heat maps and seaborn correlation library to produce solid evidence of correlation of cancer M or B.
+
 #### Technologies
 
 - Technology 1
@@ -26,10 +28,12 @@ Utlized ML to discover trends and regression for a medical cause.
 ## How To Use
 
 #### Installation
-pip3 install numpy
-pip3 install pandas
-pip3 install matplotlib
-pip3 install seaborn
+```html
+    <p>pip3 install numpy</p>
+    <p>pip3 install pandas</p>
+    <p>pip3 install matplotlib</p>
+    <p>pip3 install seaborn</p>
+```
 
 #### API Reference
 
@@ -44,7 +48,8 @@ pip3 install seaborn
 |:-:  |---       | :-:     | :-:     |
 | F01 | Proccessing Missing Values |  D | July-17-2023  |
 | F02 | Count Plot |  D |  July-17-2023  |
-| F03 |  |  P |    |
+| F03 | Correlation matrix and heatmap |  D | July-18-2023   |
+| F03 | Splitting Data into train and test sets |  P |    |
 
 
 ---
