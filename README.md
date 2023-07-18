@@ -16,8 +16,10 @@
 Devolped a Machine Learning model to detect breast cancer from Wisconsin Diagnotics data set. 
 Utlized ML to discover trends and regression for a medical cause.
 
+-Created training data as the subset of original data that is used to train the machine learning model, while also creating testing data to be used to check the accuracy of the model.
 -Utlized heat maps and seaborn correlation library to produce solid evidence of correlation of cancer M or B.
--Used scikit-learn api reference library 
+-Used scikit-learn api reference library. Specficly, used Standard Scalar and train_test_split for accurate data arrangments.
+    -Sckit-learn was used in Combination with the Stats 3Y03 course taken, for data standaridize actions
 
 #### Technologies
 
@@ -36,12 +38,6 @@ Utlized ML to discover trends and regression for a medical cause.
     pip3 install seaborn
 ```
 
-#### API Reference
-
-```html
-    <p>dummy code</p>
-```
-
 ---
 
 ### Backlog 
@@ -51,7 +47,7 @@ Utlized ML to discover trends and regression for a medical cause.
 | F02 | Count Plot |  D |  July-17-2023  |
 | F03 | Correlation matrix and heatmap |  D | July-18-2023   |
 | F04 | Splitting Data into train and test sets |  D | July-18-2023  |
-| F05 | Feature Scaling |  P |   |
+| F05 | Feature Scaling |  D | July-18-2023 |
 | F06 |  |  P |   |
 | F07 |  |  P |   |
 | F08 |  |  P |   |
