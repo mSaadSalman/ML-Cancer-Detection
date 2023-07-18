@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.model_selection import train_test_split
 
 dataset = pd.read_csv('/Users/saadsalman/Documents/GitHub/ML-Cancer-Detection/breast-cancer_data.csv')
 
@@ -53,6 +54,14 @@ print(corr)
 
 plt.figure(figsize=(20,10))
 sns.heatmap(corr,annot=True)
-plt.show()
+#plt.show()
 
 print("-------Splitting Data into train and test sets -------")
+x = dataset.iloc[:,1:-1].values
+y= dataset.iloc[:,-1].values
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
+print(x_train.shape)
+
+print("-------Feature Scaling -------")
+
