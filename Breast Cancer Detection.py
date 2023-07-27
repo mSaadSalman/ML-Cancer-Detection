@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score,confusion_matrix,f1_score,precision_score,recall_score
+from sklearn.model_selection import cross_val_score
 
 dataset = pd.read_csv('/Users/saadsalman/Documents/GitHub/ML-Cancer-Detection/breast-cancer_data.csv')
 
@@ -71,3 +74,26 @@ x_test = sc.transform(x_test)
 
 print(x_train)
 print(x_test)
+
+print("-------Logistic Regression -------") 
+classifier_lr = LogisticRegression(random_state=0)
+print(classifier_lr.fit(x_train,y_train))
+
+y_pred= classifier_lr.predict(x_test)
+
+acc = accuracy_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+prec = precision_score(y_test, y_pred)
+rec = recall_score(y_test, y_pred)
+
+results = pd.DataFrame([['Logistic Regression', acc, f1, prec, rec]],
+                       columns = ['Model', 'Accuracy', 'F1 Score', 'Precision', 'Recall'])
+print(results)
+
+print("-------Cross Validation -------") 
+cm = confusion_matrix(y_test, y_pred)
+print(cm)
+
+accuracies = cross_val_score(estimator=classifier_lr, X=x_train, y=y_train,cv=10)
+print("Accuracy is {:.2f} %".format(accuracies.mean()*100))
+print("Standard Deviation is {:.2f} %".format(accuracies.std()*100))

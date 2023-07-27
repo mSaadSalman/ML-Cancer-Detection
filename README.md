@@ -36,6 +36,7 @@ Utlized ML to discover trends and regression for a medical cause.
     pip3 install pandas
     pip3 install matplotlib
     pip3 install seaborn
+    pip3 install sklearn
 ```
 
 ---
@@ -48,7 +49,7 @@ Utlized ML to discover trends and regression for a medical cause.
 | F03 | Correlation matrix and heatmap |  D | July-18-2023   |
 | F04 | Splitting Data into train and test sets |  D | July-18-2023  |
 | F05 | Feature Scaling |  D | July-18-2023 |
-| F06 |  |  P |   |
+| F06 | Logistic Regression |  P |   |
 | F07 |  |  P |   |
 | F08 |  |  P |   |
 
