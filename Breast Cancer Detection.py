@@ -7,6 +7,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score,confusion_matrix,f1_score,precision_score,recall_score
 from sklearn.model_selection import cross_val_score
+from sklearn.ensemble import RandomForestClassifier
+
 
 dataset = pd.read_csv('/Users/saadsalman/Documents/GitHub/ML-Cancer-Detection/breast-cancer_data.csv')
 
@@ -97,3 +99,26 @@ print(cm)
 accuracies = cross_val_score(estimator=classifier_lr, X=x_train, y=y_train,cv=10)
 print("Accuracy is {:.2f} %".format(accuracies.mean()*100))
 print("Standard Deviation is {:.2f} %".format(accuracies.std()*100))
+
+print("-------Random forest Classifier-------")
+classifier_rm = RandomForestClassifier(random_state=0)
+print(classifier_rm.fit(x_train, y_train))
+
+y_pred = classifier_rm.predict(x_test)
+
+acc = accuracy_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+prec = precision_score(y_test, y_pred)
+rec = recall_score(y_test, y_pred)
+
+model_results = pd.DataFrame([['Random Forest', acc, f1, prec, rec]],
+                       columns = ['Model', 'Accuracy', 'F1 Score', 'Precision', 'Recall'])
+
+results = pd.concat([results, model_results], ignore_index=True)
+print(results)
+
+accuracies = cross_val_score(estimator=classifier_rm, X=x_train, y=y_train,cv=10)
+print("Accuracy is {:.2f} %".format(accuracies.mean()*100))
+print("Standard Deviation is {:.2f} %".format(accuracies.std()*100))
+cm = confusion_matrix(y_test, y_pred)
+print(cm)

@@ -49,8 +49,8 @@ Utlized ML to discover trends and regression for a medical cause.
 | F03 | Correlation matrix and heatmap |  D | July-18-2023   |
 | F04 | Splitting Data into train and test sets |  D | July-18-2023  |
 | F05 | Feature Scaling |  D | July-18-2023 |
-| F06 | Logistic Regression |  P |   |
-| F07 |  |  P |   |
+| F06 | Logistic Regression |  D |  July-20-2023 |
+| F07 |Random forest Classifier  |  D |  July-27-2023 |
 | F08 |  |  P |   |
 
 
