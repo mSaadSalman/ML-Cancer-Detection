@@ -8,6 +8,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score,confusion_matrix,f1_score,precision_score,recall_score
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import RandomizedSearchCV
 
 
 dataset = pd.read_csv('/Users/saadsalman/Documents/GitHub/ML-Cancer-Detection/breast-cancer_data.csv')
@@ -78,7 +79,7 @@ print(x_train)
 print(x_test)
 
 print("-------Logistic Regression -------") 
-classifier_lr = LogisticRegression(random_state=0)
+classifier_lr = LogisticRegression(random_state=0, max_iter=1000)
 print(classifier_lr.fit(x_train,y_train))
 
 y_pred= classifier_lr.predict(x_test)

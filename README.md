@@ -11,20 +11,28 @@
 - [Author Info](#author-info)
 
 ---
+## Dataset
+
+The Wisconsin Diagnostics dataset serves as the foundation for this project. It contains various features extracted from fine-needle aspirates (FNAs) of breast masses, and the target variable is the diagnosis, which can be either malignant (M) or benign (B).
+
+---
 ## Description
 
-Devolped a Machine Learning model to detect breast cancer from Wisconsin Diagnotics data set. 
-Utlized ML to discover trends and regression for a medical cause.
+In this project, a Machine Learning model was developed to detect breast cancer using the Wisconsin Diagnostics dataset. The dataset was split into training and testing data, with the training data used to train the model, and the testing data used to assess its accuracy.
 
--Created training data as the subset of original data that is used to train the machine learning model, while also creating testing data to be used to check the accuracy of the model.
--Utlized heat maps and seaborn correlation library to produce solid evidence of correlation of cancer M or B.
--Used scikit-learn api reference library. Specficly, used Standard Scalar and train_test_split for accurate data arrangments.
-    -Sckit-learn was used in Combination with the Stats 3Y03 course taken, for data standaridize actions
+To gain insights into the data and identify correlations between cancer diagnoses (Malignant or Benign) and different features, heat maps and the seaborn correlation library were employed. This visualization approach provided solid evidence of how various features relate to the cancer diagnosis, aiding in feature selection and engineering.
 
-#### Technologies
+To implement the Machine Learning model, the scikit-learn API reference library was utilized. Specifically, the StandardScaler was applied to standardize the data, ensuring that all features have a mean of 0 and a standard deviation of 1. This standardization process helps prevent features with different scales from dominating the model's training. Additionally, the train_test_split function from scikit-learn was used to create the training and testing sets, allowing for an accurate evaluation of the model's performance on unseen data.
 
-- Technology 1
-- Technology 2
+Furthermore, the knowledge acquired from the Stats 3Y03 course was leveraged to handle data standardization actions effectively. The course likely provided a solid foundation in statistical concepts, which proved valuable in the Machine Learning workflow
+
+#### Libraries Used
+
+This project leverages the following Python libraries:
+
+- Pandas and NumPy for data manipulation and analysis
+- Matplotlib and Seaborn for data visualization
+- Scikit-learn for machine learning tasks, including data preprocessing, model training, and evaluation
 
 ---
 
@@ -51,7 +59,6 @@ Utlized ML to discover trends and regression for a medical cause.
 | F05 | Feature Scaling |  D | July-18-2023 |
 | F06 | Logistic Regression |  D |  July-20-2023 |
 | F07 |Random forest Classifier  |  D |  July-27-2023 |
-| F08 |  |  P |   |
 
 
 ---
