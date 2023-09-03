@@ -69,4 +69,4 @@ This project leverages the following Python libraries:
 ## Author Info
 
 - Saad Salman, Student of Software Engineering at McMaster University
-- Website - []()
+- Website - https://saads.netlify.app/
