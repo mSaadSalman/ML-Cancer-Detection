@@ -10,6 +10,9 @@
 - [References](#references)
 - [Author Info](#author-info)
 
+![Schematic-workflow-diagram-of-our-proposed-method-of-breast-cancer-prediction-with-data (1)](https://github.com/mSaadSalman/ML-Cancer-Detection/assets/105026161/eb69c8ab-49e1-4e04-9ee3-7eae16dc0ee0)
+
+
 ---
 ## Dataset
 
